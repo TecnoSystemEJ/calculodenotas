@@ -8,7 +8,7 @@ function App() {
   return (
     <div>
       <Header logo="Calculo de Notas" navigation={Nav} />
-      <Container />
+      <Container>Palavras aleatorias</Container>
       <Footer />
     </div>
   );

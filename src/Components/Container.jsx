@@ -1,19 +1,6 @@
-import { useState } from "react";
-import Card from "./Card";
+import Calculator from "./Calculator";
 
-function Container() {
-  const [showCard, setShowCard] = useState(false);
-  console.log(showCard);
-  function handleShowCard() {
-    setShowCard(!showCard);
-  }
-
-  return (
-    <>
-      {showCard && <Card />}
-
-      <button onClick={handleShowCard}>{showCard ? "Fechar" : "Abrir"}</button>
-    </>
-  );
+function Container({ children }) {
+  return <Calculator />;
 }
 export default Container;
