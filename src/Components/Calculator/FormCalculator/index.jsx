@@ -1,6 +1,11 @@
 import React from "react";
 
-function FormCalculator() {
-  return <h1>ForCalculator</h1>;
+function FormCalculator({ onResult }) {
+  return (
+    <>
+      <h1>FormCalculator</h1>
+      <button onClick={onResult}>Resultado</button>
+    </>
+  );
 }
 export default FormCalculator;
