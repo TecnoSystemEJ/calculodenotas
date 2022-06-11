@@ -4,9 +4,10 @@ import Header from "./Components/Header";
 
 const Nav = ["inicio", "sobre", "contatos"];
 
-function App() {
+function Adam() {
   return (
     <div>
+      <h1>Adam</h1>
       <Header logo="Calculo de Notas" navigation={Nav} />
       <Container />
       <Footer />
@@ -14,4 +15,4 @@ function App() {
   );
 }
 
-export default App;
+export default Adam;
