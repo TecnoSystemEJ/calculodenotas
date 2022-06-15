@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import FormCalculator from "./FormCalculator";
 import ResultCalculator from "./ResultCalculator";
 
@@ -12,8 +12,6 @@ function Calculator() {
 
   return (
     <div>
-      <h1> Calculo de Notas</h1>
-      <br />
       {result ? (
         <ResultCalculator />
       ) : (
