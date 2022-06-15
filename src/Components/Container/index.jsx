@@ -4,8 +4,10 @@ import "./styles.css";
 function Container() {
   return (
     <div className="container">
-      <div className="img" />
-      <Calculator />
+      <div className="left" />
+      <div className="right">
+        <Calculator />
+      </div>
     </div>
   );
 }

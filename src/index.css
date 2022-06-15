@@ -2,9 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Inter;
+  font-family: Inter, Ubuntu;
 }
 @font-face {
   font-family: Inter;
-  src: url(./Assets/Fonts/Inter-VariableFont_slnt\,wght.ttf);
+  src: url(./Assets/Fonts/Ubuntu-Regular.ttf);
+}
+
+@font-face {
+  font-family: Ubuntu;
+  src: url(./Assets/Fonts/Ubuntu-Regular.ttf);
 }

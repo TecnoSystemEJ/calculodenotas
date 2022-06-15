@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 import "./styles.css";
 
 const titleInputs = [
@@ -69,24 +70,26 @@ function FormCalculator({ onResult }) {
             </div>
           ))}
         </div>
-        <div className="groupButton"></div>
-        <button
-          id="b_remover"
-          className="button"
-          type="button"
-          onClick={remCamp}
-        >
-          Remover Campo
-        </button>
+        <div className="groupButton">
+          <button
+            id="b_remover"
+            className="button"
+            type="button"
+            onClick={remCamp}
+          >
+            Remover Campo
+          </button>
 
-        <button
-          id="b_adicionar"
-          className="button"
-          type="button"
-          onClick={addCamp}
-        >
-          Adicionar Campo
-        </button>
+          <button
+            id="b_adicionar"
+            className="button"
+            type="button"
+            onClick={addCamp}
+          >
+            Adicionar Campo
+          </button>
+        </div>
+
         <br />
         <button id="b_resul" className="button" type="submit">
           Resultado
