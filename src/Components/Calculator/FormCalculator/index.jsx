@@ -48,17 +48,20 @@ function FormCalculator({ onResult }) {
   return (
     <div id="caixa">
       <h1 id="titulo">Calculadora de Notas</h1>
+      <h1 id="linha">___________</h1>
       <form onSubmit={onSubmit}>
         <div className="groupInput">
           {titleInputs.map((value) => (
             <div className="input" key={value.id}>
-              <label htmlFor={value.id}>{value.title}</label>
+              <label id="tituloInput" htmlFor={value.id}>
+                {value.title}
+              </label>
               <input
                 className="inputNotas"
                 id={value.id}
                 type="text"
                 onChange={onChange}
-                placeholder="Insira a nota"
+                placeholder={"Insira a " + value.title}
                 pattern="[0-9]+([.][0-9]+)?"
                 min="0"
                 required
@@ -68,20 +71,21 @@ function FormCalculator({ onResult }) {
         </div>
         <div className="groupButton"></div>
         <button
-          id="b_adicionar"
-          className="button"
-          type="button"
-          onClick={addCamp}
-        >
-          Adicionar Campo
-        </button>
-        <button
           id="b_remover"
           className="button"
           type="button"
           onClick={remCamp}
         >
           Remover Campo
+        </button>
+
+        <button
+          id="b_adicionar"
+          className="button"
+          type="button"
+          onClick={addCamp}
+        >
+          Adicionar Campo
         </button>
         <br />
         <button id="b_resul" className="button" type="submit">
