@@ -4,16 +4,18 @@ import ResultCalculator from "./ResultCalculator";
 
 function Calculator() {
   const [result, setResult] = useState(false);
-  console.log(result);
+  const [value, setValue] = useState(0);
 
-  function handleResult() {
+  function handleResult(media) {
+    setValue(media);
+    console.log(media);
     setResult(!result);
   }
 
   return (
     <div>
       {result ? (
-        <ResultCalculator />
+        <ResultCalculator media={value} />
       ) : (
         <FormCalculator onResult={handleResult} />
       )}
