@@ -4,7 +4,9 @@ import "./styles.css";
 function Container() {
   return (
     <div className="container">
-      <div className="left" />
+      <div className="left">
+        <img src="../../Assets/img/image_3.png"  alt="imagem 3" className="img" />
+      </div>
       <div className="right">
         <Calculator />
       </div>
