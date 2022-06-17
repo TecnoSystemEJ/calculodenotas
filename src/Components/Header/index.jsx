@@ -1,14 +1,16 @@
 import "./styles.css";
+import LogoTS from "../../Assets/img/LogoTS.png"
+import LogoUneb from "../../Assets/img/LogoUneb.png"
 
-function Header({ logo, navigation }) {
+function Header() {
   return (
     <div className="header">
-      <h1 className="logo">{logo}</h1>
-      <nav className="navigation">
-        {navigation.map((item) => (
-          <span key={item}>{item}</span>
-        ))}
-      </nav>
+      <div className="logoTS">
+        <img src={LogoTS} alt="Logo-tecno-system"/>
+      </div>
+      <div className="logoUneb">
+        <img src={LogoUneb} alt="Logo-UNEB"/>
+      </div>
     </div>
   );
 }

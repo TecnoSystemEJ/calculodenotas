@@ -13,3 +13,6 @@
   font-family: Ubuntu;
   src: url(./Assets/Fonts/Ubuntu-Regular.ttf);
 }
+body {
+  background-color: #C0C0C0;
+}

@@ -1,17 +1,13 @@
 .header {
   height: 150px;
-  background-color: #ccc;
   display: flex;
   padding: 50px 15px;
-}
+  justify-content: center;
+  position: relative;
+  align-items: center;
 
-.logo {
-  flex: 1;
 }
-
-.navigation {
-  display: flex;
-  gap: 20px;
-  margin-right: 40px;
-  font-size: 18px;
+.logoUneb {
+  position: absolute;
+  right: 50px;
 }
